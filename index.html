@@ -1,0 +1,129 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Radiant Blog - Home</title>
+  <style>
+    body { margin: 0; font-family: sans-serif; background-color: #f9fafb; }
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 1rem; }
+    .sticky-nav { position: sticky; top: 0; background-color: white; z-index: 10; box-shadow: 0 1px 2px rgba(0,0,0,0.05); }
+    nav a { padding: 0.5rem 0.75rem; font-size: 0.875rem; font-weight: 500; text-decoration: none; border-radius: 0.375rem; transition: all 0.2s ease; color: black; }
+    nav a.active { background: linear-gradient(to right, #6366f1, #8b5cf6); color: white; }
+    nav a:hover { background-color: #f3f4f6; }
+    .main { display: flex; flex-direction: column; gap: 2rem; }
+    @media(min-width: 768px) { .main { flex-direction: row; } }
+    .card { background-color: white; border-radius: 0.75rem; box-shadow: 0 4px 6px rgba(0,0,0,0.1); overflow: hidden; transition: all 0.3s ease; }
+    .card h2, .card h3 { margin: 0; }
+    .cover-default { height: 16rem; position: relative; background: linear-gradient(to right, #6366f1, #8b5cf6); color: white; display: flex; justify-content: center; align-items: center; }
+    .cover-pink { background: linear-gradient(to right, #ec4899, #f43f5e); height: 16rem; color: white; display: flex; justify-content: center; align-items: center; }
+    .cover h2 { font-size: 1.875rem; text-align: center; padding: 0 1rem; }
+    .content { padding: 1.5rem; }
+    .badge { display: inline-block; padding: 0.25rem 0.5rem; font-size: 0.75rem; border-radius: 9999px; }
+    .badge-indigo { background-color: #e0e7ff; color: #4338ca; }
+    .badge-purple { background-color: #f3e8ff; color: #7e22ce; }
+    .ad-banner { height: 90px; background-color: #f1f5f9; border: 1px dashed #cbd5e1; display: flex; align-items: center; justify-content: center; margin-bottom: 2rem; }
+    .sidebar { width: 100%; }
+    @media(min-width: 768px) { .sidebar { width: 33.3333%; } }
+    .post-section { width: 100%; }
+    @media(min-width: 768px) { .post-section { width: 66.6667%; padding-right: 1.5rem; } }
+    .footer { background-color: #111827; color: white; padding: 3rem 1rem; margin-top: 3rem; }
+    .footer a { color: #9ca3af; text-decoration: none; font-size: 0.875rem; transition: color 0.2s ease; }
+    .footer a:hover { color: white; }
+    .footer-bottom { border-top: 1px solid #1f2937; padding-top: 2rem; display: flex; flex-direction: column; align-items: center; gap: 1rem; }
+    @media(min-width: 768px) { .footer-bottom { flex-direction: row; justify-content: space-between; } }
+    .author-badge { height: 2.5rem; width: 2.5rem; border-radius: 9999px; background: linear-gradient(to right, #6366f1, #8b5cf6); color: white; display: flex; align-items: center; justify-content: center; font-weight: bold; }
+  </style>
+</head>
+<body>
+  <nav class="sticky-nav">
+    <div class="container">
+      <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; padding: 0.75rem 0;">
+        <div style="display: flex; overflow-x: auto; gap: 0.5rem; width: 100%; padding-bottom: 0.5rem;">
+          <a href="index.html" class="active">Home</a>
+          <a href="tech.html">Tech</a>
+          <a href="lifestyle.html">Lifestyle</a>
+          <a href="travel.html">Travel</a>
+          <a href="about.html">About</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container main">
+    <section class="post-section">
+      <div class="card">
+        <div class="cover-default">
+          <h2>The Future of Web Design: Trends to Watch in 2023</h2>
+        </div>
+        <div class="content">
+          <div style="display: flex; align-items: center; margin-bottom: 1rem;">
+            <div class="author-badge">JD</div>
+            <div style="margin-left: 0.75rem;">
+              <p style="font-size: 0.875rem; font-weight: 500; color: #111827;">Jane Doe</p>
+              <p style="font-size: 0.75rem; color: #6b7280;">May 15, 2023 • 8 min read</p>
+            </div>
+          </div>
+          <p style="color: #4b5563; margin-bottom: 1rem;">Discover the cutting-edge design trends that are shaping the web in 2023. From immersive 3D elements to innovative color schemes, we explore what's next in the world of digital design.</p>
+          <div style="display: flex; justify-content: space-between; align-items: center;">
+            <div style="display: flex; gap: 0.5rem;">
+              <span class="badge badge-indigo">Design</span>
+              <span class="badge badge-purple">Trends</span>
+            </div>
+            <a href="#" style="font-size: 0.875rem; font-weight: 500; color: #8b5cf6;">Read More →</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="ad-banner"><span>ADVERTISEMENT (728x90)</span></div>
+
+      <div class="card">
+        <div class="cover-pink">
+          <h2>✈️ Travel Tips</h2>
+        </div>
+        <div class="content">
+          <h3>Exploring Hidden Gems: Travel Off the Beaten Path</h3>
+          <p style="font-size: 0.875rem; color: #4b5563;">Discover extraordinary destinations that most tourists miss and create unforgettable travel memories.</p>
+          <div style="display: flex; justify-content: space-between; align-items: center;">
+            <span style="font-size: 0.75rem; color: #6b7280;">May 2, 2023</span>
+            <a href="#" style="font-size: 0.875rem; font-weight: 500; color: #8b5cf6;">Read More →</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="ad-banner"><span>ADVERTISEMENT (728x90)</span></div>
+    </section>
+
+    <aside class="sidebar">
+      <div class="card content">
+        <h3 style="font-size: 1.125rem; font-weight: 700; margin-bottom: 0.75rem;">About Radiant Blog</h3>
+        <p style="font-size: 0.875rem; color: #4b5563;">Exploring the latest in technology, lifestyle trends, and travel adventures. Join us for inspiring stories and digital insights.</p>
+      </div>
+    </aside>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <p style="color: #9ca3af; font-size: 0.875rem;">© 2023 Radiant Blog. All rights reserved.</p>
+        <div style="display: flex; gap: 1.5rem;">
+          <a href="#">Terms of Service</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Cookie Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    window.addEventListener('scroll', function () {
+      const nav = document.querySelector('.sticky-nav');
+      if (window.scrollY > 10) {
+        nav.style.boxShadow = '0 4px 6px rgba(0,0,0,0.1)';
+      } else {
+        nav.style.boxShadow = '0 1px 2px rgba(0,0,0,0.05)';
+      }
+    });
+  </script>
+</body>
+</html>
